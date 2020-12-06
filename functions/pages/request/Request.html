@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request</title> 
+<link rel="icon" type="image/x-icon" href=" assests/img/favicon.ico" />
+<link rel="stylesheet" href=" css/style.css">
+<link rel="stylesheet" href=" css/approval.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <div class="container">
+         <nav class="navbar">
+             <div class="nav_icon" onclick="toggleSidebar()">
+                 <i class="fa fa-bars"></i> </div>
+                 <div class="navbar__left"></div>
+                 <div class="navbar__right">
+                     <a href="#">
+                         <img width="30" src=" assests/avatar.svg" alt="" />
+                     </a>
+                 </div>
+         </nav>
+
+         <main>
+             <div class="main_container">
+                <div class="main_title">
+                    <br>
+                    <div class="main__greeting">
+                        <h1>Requesting</h1>
+                        <p>Request the required skilled labour for your job.</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="table_data">
+                    <table id="customers" style="width:100%">
+                        <tr>
+                          <th>Skill Type</th>
+                          <th>No. of workers required</th>
+                        </tr>
+                        <tr>
+                          <td>Sewing</td>
+                          <td><input type="text" id="type1" placeholder="0" value="0"> </td>
+                        </tr>
+                        <tr>
+                          <td>Welding</td>
+                          <td><input type="text" id="type2" placeholder="0" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Carpentry</td>
+                            <td><input type="text" id="type3" placeholder="0" value="0"> </td>
+                          </tr>
+                          <tr>
+                            <td>Painter</td>
+                            <td><input type="text" id="type4" placeholder="0" value="0"> </td>
+                          </tr>
+                          <tr>
+                            <td>Mason</td>
+                            <td><input type="text" id="type5" placeholder="0" value="0"> </td>
+                          </tr>
+                    </table>
+                </div>
+               <center><button class="button2" onclick="sendrequest()">Request</button></center> 
+                
+</div>
+         </main>
+
+         <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__logo">
+                <h1>MigLab</h1>
+                <p>Labour at ease</p>
+            </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+            </div>
+                <div class="sidebar__menu" >
+                    <div class="sidebar__link ">
+                        <i class="fa fa-home"></i>
+                        <a href="/dashboard">Dashboard</a>
+                    </div>
+                    <div class="sidebar__link active_menu_link">
+                        <i class="fa fa-user-plus"></i>
+                        <a href="/request">Request</a>
+                    </div>
+
+                    <div class="sidebar__link">
+                        <i class="fa fa-handshake-o"></i>
+                        <a href="/approval">Accept / Reject</a>
+                    </div>
+
+                    <div class="sidebar__link">
+                        <i class="fa fa-hourglass-half"></i>
+                        <a href="/pending">Pending Request</a>
+                    </div>
+
+                    <div class="sidebar__logout">
+                        <i class="fa fa-power-off"></i>
+                        <a href="/login">Log out</a>
+                    </div>
+                </div>
+            </div> 
+            </div> 
+         </div>
+
+     
+     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <script src=" js/script.js"></script>
+     <script src=" js/recruitment.js"></script>
+</body>
+</html>

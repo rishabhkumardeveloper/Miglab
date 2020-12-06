@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title> 
+<link rel="icon" type="image/x-icon" href=" assests/img/favicon.ico" />
+<link rel="stylesheet" href=" css/approval.css"> 
+<link rel="stylesheet" href=" css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+     <div class="container">
+         <nav class="navbar">
+             <div class="nav_icon" onclick="toggleSidebar()">
+                 <i class="fa fa-bars"></i> </div>
+                 
+                 <div class="navbar__right">
+                     <a href="#">
+                         <img width="30" src=" assests/avatar.svg" alt="" />
+                     </a>
+                 </div>
+         </nav>
+         
+         <main>
+            <div class="main_container">
+
+                <div class="main_title">
+                    <br>
+                    <div class="main__greeting">
+                        <h1>Approval</h1>
+                        <p>Accept or Reject Workers as per your requirements</p>
+                    </div>
+                </div>
+                <br>
+                <div id="show"></div>                
+            </div>
+            <center>
+            <button class="button2" onclick="onClick()">Submit</button>
+        </center>
+         </main>
+
+         <div id="sidebar">
+            <div class="sidebar__title">
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+                
+                <div class="sidebar__logo">
+                    <h1>MigLab</h1>
+                    <p>Labour at ease</p>
+                   
+                <div class="sidebar__menu">
+                    <div class="sidebar__link ">
+                        <i class="fa fa-home"></i>
+                        <a href="/dashboard">Dashboard</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <i class="fa fa-user-plus"></i>
+                        <a href="/request">Request</a>
+                    </div>
+
+                    <div class="sidebar__link active_menu_link">
+                        <i class="fa fa-handshake-o"></i>
+                        <a href="/approval">Accept / Reject</a>
+                    </div>
+
+                    <div class="sidebar__link">
+                        <i class="fa fa-hourglass-half"></i>
+                        <a href="/pending">Pending Request</a>
+                    </div>
+
+                    <div class="sidebar__logout">
+                        <i class="fa fa-power-off"></i>
+                        <a href="/login">Log out</a>
+                    </div>
+                </div>
+            </div> 
+            </div> 
+         </div>
+
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <script src=" js/approval.js"></script>
+</body>
+</html>

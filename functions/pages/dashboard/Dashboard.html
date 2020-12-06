@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title> 
+<link rel="icon" type="image/x-icon" href=" assests/img/favicon.ico" />
+<link rel="stylesheet" href=" css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+     <div class="container">
+         <nav class="navbar">
+             <div class="nav_icon" onclick="toggleSidebar()">
+                 <i class="fa fa-bars"></i> </div>
+                 <div class="navbar__left"></div>
+                 <div class="navbar__right">
+                     <a href="#">
+                         <img width="30" src=" assests/avatar.svg" alt="" />
+                     </a>
+                 </div>
+         </nav>
+         <main>
+            <div class="main_container">
+
+                <div class="main_title">
+                    <!--<img src = "assests/display.jpg"> -->
+                    <div class="main__greeting">
+                        <h1>Hello!</h1>
+                        <p>Welcome to the space where you can find right labours for your work.</p>
+                    </div>
+                </div>
+
+   <div class="main__cards">
+
+       <div class="card">
+           <i class="fa fa-user-o fa-2x text-lightblue"></i>
+           <div class="card__inner">
+               <p class="text-primary-p">Labourers Available</p>
+               <span>423</span>
+           </div>
+       </div>
+
+
+       <div class="card">
+           <i class="fa fa-thumbs-up fa-2x text-green"></i>
+           <div class="card__inner">
+               <p class="text-primary-p">Labourers Employed</p>
+               <span>774</span>
+           </div>
+       </div>
+
+       <div class="card">
+           <i class="fa fa-building-o fa-2x text-lightblue"></i>
+           <div class="card__inner">
+               <p class="text-primary-p">Companies</p>
+               <span>35</span>
+           </div>
+       </div>
+      
+    </div>
+
+                
+        </main>
+
+         <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__logo">
+                <h1>MigLab</h1>
+                <p>Labour at ease</p>
+            </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar"></i>
+            </div>
+                <div class="sidebar__menu" >
+                    <div class="sidebar__link active_menu_link">
+                        <i class="fa fa-home"></i>
+                        <a href="/dashboard">Dashboard</a>
+                    </div>
+                    <div class="sidebar__link">
+                        <i class="fa fa-user-plus"></i>
+                        <a href="/request">Request</a>
+                    </div>
+
+                    <div class="sidebar__link">
+                        <i class="fa fa-handshake-o"></i>
+                        <a href="/approval">Accept / Reject</a>
+                    </div>
+
+                    <div class="sidebar__link">
+                        <i class="fa fa-hourglass-half"></i>
+                        <a href="/pending">Pending Request</a>
+                    </div>
+
+                    <div class="sidebar__logout">
+                        <i class="fa fa-power-off"></i>
+                        <a href="/login">Log out</a>
+                    </div>
+                </div>
+            </div> 
+            </div> 
+         </div>
+
+     
+     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <script src=" js/script.js"></script>
+</body>
+</html>
